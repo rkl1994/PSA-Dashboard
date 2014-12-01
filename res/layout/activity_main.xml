@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+    
+    <RelativeLayout 
+        android:id="@+id/dash_board_bg"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="460dp"
+        android:background="@drawable/dashboard_bg">
+        <RelativeLayout 
+            android:id="@+id/dash_relative1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp">
+            <ImageView 
+                android:id="@+id/dash_normal_left_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dash_left_circle"/>
+            <TextView 
+                android:id="@+id/dash_speed_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KM/H"
+                android:textColor="#AFDEFF"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="242dp"
+                android:textSize="25sp"/>
+            
+            <TextView 
+                android:id="@+id/dash_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="107"
+                android:textColor="#fff"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="145dp"
+                android:textSize="60sp"/>
+        </RelativeLayout>
+        <RelativeLayout 
+            android:id="@+id/dash_relative2"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp">
+            <RelativeLayout
+                android:id="@+id/dash_normal_right_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dash_right_circle"/>
+            
+           <Button 
+               android:id="@+id/dash_change_btn"
+               android:layout_width="wrap_content"
+               android:layout_marginTop="260dp"
+               android:layout_marginLeft="40dp"
+               android:layout_height="wrap_content"
+               android:background="@drawable/dash_arrow_down"/>
+            <TextView 
+                android:id="@+id/dash_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导航"
+                android:textColor="#AFDEFF"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="242dp"
+                android:textSize="25sp"/>
+            <RelativeLayout 
+                android:id="@+id/dash_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:background="@drawable/dash_navi_icon"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="140dp">
+                
+            </RelativeLayout>
+        </RelativeLayout>
+        
+        
+        <RelativeLayout 
+            android:id="@+id/mid_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true">
+            <ImageView 
+                android:id="@+id/dash_board_mid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dash_middle_icon"
+                android:layout_marginTop="70dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView 
+                android:id="@+id/dash_gear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:textColor="#fff"
+                android:textSize="35sp"/>
+            
+        </RelativeLayout>
+        
+        
+ 
+    </RelativeLayout>
+
+</RelativeLayout>
